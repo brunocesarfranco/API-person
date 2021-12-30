@@ -7,6 +7,12 @@ namespace Examples.Charge.Domain.Aggregates.PersonAggregate.Interfaces
 {
     public interface IPersonRepository
     {
+
         Task<IEnumerable<PersonAggregate.Person>> FindAllAsync();
+        Task<PersonAggregate.Person> Add(PersonAggregate.Person person);
+        Task<PersonAggregate.Person> ChangeName(int id, string name);
+        Task<bool> Delete(int id);
+
+
     }
 }

@@ -6,8 +6,10 @@ using System.Text;
 
 namespace Examples.Charge.Application.Messages.Response
 {
-    public class ExampleListResponse: BaseResponse
-    {
+    public class ExampleListResponse : BaseResponse
+    { 
         public List<ExampleDto> ExampleObjects { get; set; }
+
+
     }
 }
